@@ -443,7 +443,7 @@ static void print_ref_list(struct ref_filter *filter, struct ref_sorting *sortin
 	free(to_free);
 }
 
-static void print_current_branch_name()
+static void print_current_branch_name(void)
 {
 	const char *refname = resolve_ref_unsafe("HEAD", 0, NULL, NULL);
 	const char *shortname;
